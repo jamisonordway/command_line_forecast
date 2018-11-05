@@ -14,3 +14,13 @@ OptionParser.new do |parser|
     options[:path] = v
   end
 end.parse!
+
+if options[:latitude] && options[:longitude] && options[:granularity] 
+  lat = options[:latitude]
+  long = options[:longitude]
+  granularity = options[:granularity]
+  result = DarkSky.new(lat, long, granularity)
+  result.get_weather
+else
+  puts "missing params"
+end
