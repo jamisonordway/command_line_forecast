@@ -6,7 +6,9 @@ To use Command Line Forecast, clone this repo, then procede to **setup**.
 
 ## Setup
 
-First, install excon for API calls: `sudo gem install excon`
+Enter Command Line Forecast directory with `cd command_line_forecast`
+
+Install excon for API calls: `sudo gem install excon`
 
 Then install dotenv for environment variables: `gem install dotenv`
 
