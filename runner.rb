@@ -23,12 +23,10 @@ if options[:latitude] && options[:longitude] && options[:granularity]
   long = options[:longitude]
   granularity = options[:granularity]
   result = DarkSky.new(lat, long, granularity)
-  binding.pry
-    if options[:path]
-      File.write("#{options[:path]}", result.get_weather)
-    else
-      result.get_weather
-    end
   else
   puts 'missing params'
 end
+
+open('myfile.out', 'w') { |f|
+  f.puts "Hello, world."
+}

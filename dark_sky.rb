@@ -20,7 +20,7 @@ class DarkSky
     when 'currently'
       p get_current(response)
     when 'minutely'
-      p 'minutely report under construction.'
+      p 'minutely forecast under construction.'
     when 'hourly'
       p get_hourly(response)
     when 'daily'
@@ -37,6 +37,12 @@ class DarkSky
   def get_current(response)
     response['currently']
   end
+
+  # This seems like a bug or a rate limit issue-- minutely always returns nil.
+
+  # def get_minutely(response)
+  #   response['minutely']
+  # end
 
   def get_hourly(response)
     response['hourly']
