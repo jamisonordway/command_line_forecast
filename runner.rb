@@ -1,5 +1,6 @@
 require 'optparse'
 require './dark_sky.rb'
+require './file_write.rb'
 
 options = {}
 
@@ -13,20 +14,18 @@ OptionParser.new do |parser|
   parser.on('-g', '--granularity GRANULARITY', String, 'The granularity for the forecast results') do |v|
     options[:granularity] = v
   end
-  parser.on('-p', '--path[PATH]', String, 'The optional filepath for the forecast results') do |v|
+  parser.on('-p', '--path PATH', String, 'The optional filepath for the forecast results') do |v|
     options[:path] = v
   end
 end.parse!
 
 if options[:latitude] && options[:longitude] && options[:granularity] 
-  lat = options[:latitude]
-  long = options[:longitude]
-  granularity = options[:granularity]
-  result = DarkSky.new(lat, long, granularity)
+  result = DarkSky.new(options[:latitude], options[:longitude], options[:granularity])
+  if options[:path]
+    FileWrite.new(options[:path], result.get_weather).write_to_path
+  else
+    result.get_weather
+  end
   else
   puts 'missing params'
 end
-
-open('myfile.out', 'w') { |f|
-  f.puts "Hello, world."
-}
