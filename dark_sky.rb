@@ -18,15 +18,15 @@ class DarkSky
     response = JSON.parse(conn.body)
     case @granularity
     when 'currently'
-      get_current(response)
+      p get_current(response)
     when 'minutely'
-      'minutely report under construction.'
+      p 'minutely report under construction.'
     when 'hourly'
-      get_hourly(response)
+      p get_hourly(response)
     when 'daily'
-      get_daily(response)
+      p get_daily(response)
     else
-      invalid_param_message
+      p invalid_param_message
     end
   end
 
@@ -45,5 +45,5 @@ class DarkSky
   def get_daily(response)
     response['daily']
   end
-  
+
 end
