@@ -1,0 +1,4 @@
+!#/usr/bin/env ruby
+
+require './parser.rb'
+puts 'Thank you for using Command Line Forecast!'
