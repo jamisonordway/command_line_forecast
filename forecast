@@ -1,4 +1,4 @@
-!#/usr/local/bin/forecast ruby
+#!/usr/bin/env ruby
 
 require './runner.rb'
 puts 'Thank you for using Command Line Forecast!'
