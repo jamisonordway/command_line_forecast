@@ -68,8 +68,7 @@ Thank you for using Command Line Forecast!`
 
 `forecast -a 40.7128 -o 74.0069`
 
-`missing params
-
+`missing params. 
 Thank you for using Command Line Forecast!`
 
 
