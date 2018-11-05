@@ -12,7 +12,7 @@ Install excon for API calls: `sudo gem install excon`
 
 Then install dotenv for environment variables: `gem install dotenv`
 
-Obtain an key [here](https://darksky.net/dev/register).
+Obtain an key for the Dark Sky API [here](https://darksky.net/dev/register).
 
 From command line, `touch .env`
 
