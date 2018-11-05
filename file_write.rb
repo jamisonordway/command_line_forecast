@@ -7,8 +7,7 @@ class FileWrite
   end
 
   def write_to_path
-    File.write("#{@path}", @content)
-    binding.pry
+    File.write("#{@path}", @content.to_json)
   end
 
 end
