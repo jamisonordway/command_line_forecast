@@ -1,6 +1,6 @@
-# command_line_forecast
+# Command Line Forecast
 
-This applicaiton provides weather forecast breakdowns right in the command line!
+This application provides weather forecast breakdowns right in the command line!
 
 To use Command Line Forecast, clone this repo, then procede to **setup**.
 
@@ -70,3 +70,12 @@ Thank you for using Command Line Forecast!`
 
 `missing params
 Thank you for using Command Line Forecast!`
+
+
+*notes and next steps*
+
+* Minutely breakdown doesn't function as expected -- `options[:minutely]` returns `nil`. Could be a bug or a rate limit issue.
+
+* Refactor lengthy conditionals in `runner.rb`
+
+* Add unit tests
