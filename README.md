@@ -10,6 +10,14 @@ First, install excon for API calls: `sudo gem install excon`
 
 Then install dotenv for environment variables: `gem install dotenv`
 
+Obtain an key (here)[https://darksky.net/dev/register].
+
+From command line, `touch .env`
+
+Inside `.env`, add the following:
+
+`API_KEY: [YOUR_API_KEY]`
+
 ## Getting a weather forecast
 
 In the command line, run `forecast -h` to see a list of all parameter options.
