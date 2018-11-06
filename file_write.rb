@@ -1,4 +1,3 @@
-require 'pry'
 class FileWrite
 
   def initialize(path, content)
@@ -9,5 +8,5 @@ class FileWrite
   def write_to_path
     File.write("#{@path}", @content.to_json)
   end
-
+  
 end
