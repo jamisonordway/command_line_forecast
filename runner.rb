@@ -5,7 +5,7 @@ require './file_write.rb'
 options = {}
 
 OptionParser.new do |parser|
-  options[:granularity] = 'daily'
+  options[:granularity] = 'currently'
   parser.on('-a', '--latitude LATITUDE', Float, 'The latitude for the forecast. Example: 37.7749') do |v|
     options[:latitude] = v
   end
