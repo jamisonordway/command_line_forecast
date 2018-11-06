@@ -18,6 +18,9 @@ OptionParser.new do |parser|
   parser.on('-p', '--path PATH', String, 'The optional filepath for the forecast results.') do |v|
     options[:path] = v
   end
+  parser.on('-h', 'Instructions for using Command Line Forecast') do 
+    show_help
+  end
 end.parse!
 
 if options[:latitude] && options[:longitude] && options[:granularity] 
