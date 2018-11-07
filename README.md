@@ -28,7 +28,7 @@ In the command line, run `forecast -h` to see a list of all parameter options.
 
 `-o` refers to a longitude.
 
-`-g` refers to a given granularity (currently, hourly, or daily).
+`-g` refers to a given granularity (currently, hourly, or daily). Will default to 'currently' unless another granularity is specified.
 
 `-p` is optional and allows for a specified 'path/to/file' to which JSON result will be written.
 
@@ -76,7 +76,7 @@ Thank you for using Command Line Forecast!`
 
 **With missing parameters:**
 
-`forecast -a 40.7128 -o 74.0069`
+`forecast -a 40.7128`
 
 `missing params. 
 Thank you for using Command Line Forecast!`
