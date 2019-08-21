@@ -4,6 +4,8 @@ This application provides weather forecast breakdowns right in the command line!
 
 To use Command Line Forecast, clone this repo, then procede to **setup**.
 
+(This project was time-boxed to one day.)
+
 ## Setup
 
 Enter Command Line Forecast directory with `cd command_line_forecast`
